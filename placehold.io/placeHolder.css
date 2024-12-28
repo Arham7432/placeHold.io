@@ -1,0 +1,264 @@
+@import url('https://fonts.googleapis.com/css2?family=Host+Grotesk:wght@300;700&family=Unbounded:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Host Grotesk', sans-serif;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+
+::-moz-selection {
+    color: #212121;
+    background: darkgray;
+}
+
+::selection {
+    color: #212121;
+    background: darkgray;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+    color: white;
+    font-size: 16px;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #212121;
+    background-image: url(assets/bg.svg);
+}
+
+main {
+    height: 80%;
+    width: 40%;
+    color: black;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    background: rgba(122, 122, 122, 0.05);
+    backdrop-filter: blur(5px);
+    margin: 0 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.main2 {
+    width: 40%;
+    height: 80%;
+    color: black;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    background: rgba(122, 122, 122, 0.05);
+    backdrop-filter: blur(5px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 0 30px;
+}
+
+.main2 textarea {
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 600;
+    padding: 9px;
+    height: 30%;
+    resize: none;
+    outline: none;
+    border: none;
+    background: lavender;
+    width: 90%;
+}
+
+.container img {
+    width: 200px;
+    height: 200px;
+    border-radius: 12px;
+}
+
+.heading h1 {
+    font-size: 1.8rem;
+    text-align: center;
+    font-family: 'Unbounded', sans-serif;
+    margin-bottom: 20px;
+    color: lavender;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.form .sec-1 label,
+.form .parent label {
+    font-size: 1rem;
+    margin-bottom: 10px;
+    display: block;
+    color: lavender;
+    font-weight: 700;
+}
+
+.form select,
+.form input[type="text"],
+.form input[type="color"],
+.form textarea {
+    width: 100%;
+    padding: 9px;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-family: 'Host Grotesk', sans-serif;
+    transition: all 0.3s;
+    background-color: gray;
+    height: 40px;
+    background: rgba(122, 122, 122, 0.05);
+    backdrop-filter: blur(5px);
+    color: white;
+    font-weight: 500;
+    border: none;
+}
+
+.form option {
+    background: #222;
+}
+
+
+.form select:focus,
+.form input[type="text"]:focus,
+.form input[type="color"]:focus,
+.form textarea:focus {
+    outline: none;
+    border: none;
+}
+
+
+textarea {
+    cursor: default;
+}
+
+.form .container {
+    text-align: center;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 60px;
+    width: 100%;
+}
+
+.form .container img {
+    max-width: 100%;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    margin: 10px 0;
+}
+
+.form .container textarea {
+    resize: none;
+}
+
+#nameOnImage {
+    background-color: transparent;
+    border: none;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.422);
+    border-radius: 0px;
+    transition: all 0.4s;
+}
+
+#nameOnImage:focus {
+    border-bottom: 2px solid rgb(0, 0, 0);
+}
+
+i {
+    font-size: 30px;
+    color: rgba(230, 230, 250, 0.667);
+}
+
+@media screen and (max-width: 600px) {
+    .heading h1 {
+        font-size: 1.5rem;
+    }
+
+    main {
+        padding: 15px;
+    }
+
+    .form select,
+    .form input[type="text"],
+    .form input[type="color"],
+    .form textarea {
+        font-size: 0.9rem;
+    }
+}
+
+.heading h1 span {
+    font-family: unbounded;
+    font-weight: 400;
+    color: ghostwhite;
+}
+
+[class^=swal2] {
+    white-space: nowrap;
+}
+
+@media screen and (min-width:1700px) {
+    body {
+        width: 60%;
+        margin: auto;
+    }
+
+    main,
+    .main2 {
+        width: 40%;
+        gap: 30px;
+        border-radius: 0px;
+        height: 60%
+    }
+}
+
+@media screen and (max-width:600px) {
+    body {
+        flex-direction: column;
+        padding: 20px;
+        gap: 40px;
+    }
+
+    main,
+    .main2 {
+        width: 100%;
+        gap: 30px;
+        border-radius: 0px;
+    }
+}
+
+@media screen and (max-width:390px) {
+    main {
+        margin-top: 30vh;
+    }
+
+
+    body {
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    main,
+    .main2 {
+        width: 100%;
+        gap: 30px;
+    }
+}

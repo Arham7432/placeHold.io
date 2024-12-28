@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Placehold.io</title>
+    <link rel="shortcut icon" href="https://placehold.co/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="placeHolder.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</head>
+
+<body>
+    <main>
+        <div class="heading">
+            <h1>Placehold.<span>io</span></h1>
+        </div>
+        <div id="outer">
+            <div class="form">
+                <div class="sec-1">
+                    <label for="selectImage">Image Size:</label>
+                    <select id="selectImage">
+                        <option value="150x50">Small (150x50)</option>
+                        <option value="200x200">Medium Square (200x200)</option>
+                        <option value="400x400">Large Square (400x400)</option>
+                        <option value="650x350">Large (650x350)</option>
+                        <option value="1920x1080">Full HD (1920x1080)</option>
+                    </select>
+                </div>
+
+                <div class="parent">
+                    <label for="nameOnImage">Text on Image:</label>
+                    <input type="text" id="nameOnImage" placeholder="Enter text" autocomplete="off" spellcheck="false">
+                </div>
+
+                <div class="parent">
+                    <label for="backgroundColor">Background Color:</label>
+                    <input type="color" class="style1" id="backgroundColor" value="#00ADB5">
+                </div>
+
+                <div class="parent">
+                    <label for="textColor">Text Color:</label>
+                    <input type="color" class="style1" id="textColor" value="#FF8C42">
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <div class="main2">
+        <div class="heading">
+            <h1>Result:</h1>
+        </div>
+
+        <div class="container">
+            <img src="https://via.placeholder.com/150/CCCCCC/000000?text=click anywhere" alt="Placeholder">
+            <textarea id="urlPath" cols="20" rows="2" placeholder="Generated URL" spellcheck="false"></textarea>
+        </div>
+    </div>
+
+    
+
+    <script src="placeHolder.js"></script>
+</body>
+
+</html>
