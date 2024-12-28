@@ -221,12 +221,11 @@ i {
         margin: auto;
     }
 
-    main,
-    .main2 {
-        width: 40%;
+      main, .main2 {
+        width: 30%;
         gap: 30px;
         border-radius: 0px;
-        height: 60%
+        height: 30%;
     }
 }
 
