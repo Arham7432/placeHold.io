@@ -222,10 +222,10 @@ i {
     }
 
       main, .main2 {
-        width: 30%;
+        width: 45%;
         gap: 30px;
         border-radius: 0px;
-        height: 30%;
+        height: 50%;
     }
 }
 
